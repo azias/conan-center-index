@@ -9,3 +9,5 @@ The naming and runtime recipe corrections have separate diffs and bug reports. T
 - [Additional old-version, CRT and MSYS2 checks](additional-checks.md)
 
 Paths in the logs have been neutralized. No Conan cache or prebuilt Boost package is included. Successful and deliberately failing configurations are distinguished in the reports. The two recipe PRs contain only their respective changes to conanfile.py; these validation files are kept on a separate branch.
+
+The runtime correction was also [tested independently](runtime-only-check.json), without the naming correction. The [complete standalone-check logs](runtime-only-logs.zip) include archive directives and all consumer checks. Both recipe corrections can be reviewed and merged independently.

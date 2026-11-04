@@ -31,3 +31,8 @@ The original MSYS2 installation has no toolchain packages and was not updated. A
 ## Recent Conan client
 
 Conan 2.34.0 consumed the exact qualified Boost 1.78 static/MT binary from a separate cache with --build=never. The two CMake programs and the recipe test_package passed. The binary itself was built with Conan 2.22.2; this was a consumption check, not another Boost build. The system Conan installation and the original 2.22.2 cache were not migrated.
+
+
+## Runtime correction tested independently
+
+The exact source from PR #31349 was built without the naming correction. Boost 1.91.0, clang-cl 20.1.2, Release, static libraries, static CRT and system layout passed installation/package_info(), archive inspection, both standalone CMake programs and the recipe test_package. The archive requests LIBCMT as configured. The naming PR is not required to merge this runtime correction.

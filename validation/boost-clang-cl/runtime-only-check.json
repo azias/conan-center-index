@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "case": {
+    "id": "runtime-only-1.91.0-release-static-static-crt-system",
+    "compiler": "clang-cl",
+    "version": "1.91.0",
+    "configuration": "Release",
+    "shared": false,
+    "layout": "system",
+    "selection": "minimal",
+    "runtime": "static",
+    "runtime_type": "Release",
+    "naming_patch_applied": false,
+    "pr_commit": "6a60d75b0b5e7d84a8f81a1ae7e596b56e3d33e2"
+  },
+  "naming_patch_applied": false,
+  "recipe_source": "exact PR 31349 branch",
+  "pr_commit": "6a60d75b0b5e7d84a8f81a1ae7e596b56e3d33e2",
+  "qualified": true,
+  "log": "out/runtime-only-1.91.0-release-static-static-crt-system/install.log"
+}
